@@ -18,7 +18,32 @@ namespace StackAndQueue
             {
                 list.Add(i);
             }
-            Console.WriteLine("\nTop of stack : {0}", stack.Peek());
+            Console.WriteLine("\nTop of the stack : {0}", stack.Peek());
+            Console.WriteLine("********************");
+
+            stack.Pop();
+
+            foreach (int i in stack)
+            {
+                list.Add(i);
+            }
+            Console.WriteLine("\nTop of the stack : {0}", stack.Peek());
+            Console.WriteLine("********************");
+            stack.Pop();
+
+            foreach (int i in stack)
+            {
+                list.Add(i);
+            }
+            Console.WriteLine("\nTop of the stack : {0}", stack.Peek());
+            Console.WriteLine("********************");
+            foreach (int i in stack)
+            {
+                list.Add(i);
+            }
+            stack.Pop();
+            Console.WriteLine("Stack Was Empty");
+            Console.WriteLine("********************");
         }
     }
 }
