@@ -15,7 +15,6 @@ namespace DataStructureProblems
 
             if (this.head == null)
             {
-                //node means address.
                 this.head = node;
             }
             else
@@ -27,7 +26,7 @@ namespace DataStructureProblems
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} ", node.data);
+            Console.Write("{0} ", node.data);
         }
         public void display()
         {
@@ -39,7 +38,7 @@ namespace DataStructureProblems
             }
             while (temp != null)
             {
-                Console.WriteLine(temp.data + " ");
+                Console.Write(temp.data + " ");
                 temp = temp.next;
             }
         }
