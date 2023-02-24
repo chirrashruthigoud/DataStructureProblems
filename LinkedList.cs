@@ -15,6 +15,7 @@ namespace DataStructureProblems
 
             if (this.head == null)
             {
+                //node means address.
                 this.head = node;
             }
             else
