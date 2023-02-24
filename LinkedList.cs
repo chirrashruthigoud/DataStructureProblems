@@ -27,7 +27,7 @@ namespace DataStructureProblems
                 }
                 temp.next = node;
             }
-            Console.Write("{0} ", node.data);
+            Console.WriteLine("{0} ", node.data);
         }
         public void display()
         {
@@ -39,7 +39,7 @@ namespace DataStructureProblems
             }
             while (temp != null)
             {
-                Console.Write(temp.data + " ");
+                Console.WriteLine(temp.data + " ");
                 temp = temp.next;
             }
         }
