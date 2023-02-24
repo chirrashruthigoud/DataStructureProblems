@@ -9,17 +9,42 @@ namespace StackAndQueue
         public static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
-            Queue queue1 = new Queue();
-            queue1.Enqueue(56);
-            queue1.Enqueue(30);
-            queue1.Enqueue(70);
+            Queue q1 = new Queue();
+            q1.Enqueue(56);
+            q1.Enqueue(30);
+            q1.Enqueue(70);
 
-            foreach (int i in queue1)
+            foreach (int i in q1)
             {
                 list.Add(i);
             }
-            Console.WriteLine("\nTop of the queue : {0}", queue1.Peek());
+            Console.WriteLine("\nTop of the Queue : {0}", q1.Peek());
             Console.WriteLine("************************");
+
+            q1.Dequeue();
+            foreach (int i in q1)
+            {
+                list.Add(i);
+            }
+            Console.WriteLine("\nTop of the Queue : {0}", q1.Peek());
+            Console.WriteLine("************************");
+
+            q1.Dequeue();
+            foreach (int i in q1)
+            {
+                list.Add(i);
+            }
+            Console.WriteLine("\nTop of the Queue : {0}", q1.Peek());
+            Console.WriteLine("************************");
+
+            q1.Dequeue();
+            foreach (int i in q1)
+            {
+                list.Add(i);
+            }
+            Console.WriteLine("\nTop of the Queue : {0}", q1.Peek());
+            Console.WriteLine("************************");
+            Console.WriteLine("Queue was Empty");
         }
     }
 }
